@@ -114,7 +114,7 @@ kernel_start:
    loop kernel_start
    
 main:
-   call video_init
+   call video_start
      
 ram_no:
   xor cx, cx ; 0
