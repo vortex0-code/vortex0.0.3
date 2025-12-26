@@ -41,6 +41,9 @@
 bits 16 
 org 0x1000 ; cs після boot jmp 0x1000 ip після boot 0x0000
 
+%include "video.asm"
+extern video_start
+
 setur_main:
    mov ax, cs ; jmp cs
    mov ds, ax 
